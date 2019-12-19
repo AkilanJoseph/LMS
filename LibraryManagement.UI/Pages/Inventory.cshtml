@@ -1,0 +1,68 @@
+﻿@page
+@model LibraryManagement.UI.Pages.InventoryModel
+@{
+    ViewData["Title"] = "Library Management - Add Book";
+}
+
+<style>
+    .divContent {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .divContent label {
+        width: 150px;
+        display: inline-block;
+    }
+
+    .divContent div {
+        width: 72%;
+        display: block;
+        padding: 5px;
+    }
+
+    input[type='text'], textarea, select {
+        width: 250px;
+        padding: 5px;
+    }
+</style>
+
+<script src="~/js/lib/jquery-3.4.1.js"></script>
+<script src="~/js/lib/jquery-ui.js"></script>
+<script src="~/js/Library.js"></script>
+
+<div id="divPageContainer">
+    <div class="">
+        <h4>Add Book</h4>
+    </div>
+    <div class="divContent" style="margin-top:20px;">
+        <div>
+            <label>Book Name:</label>
+            <input id="txtBookName" />
+        </div>
+        <div>
+            <label>Author Name:</label>
+            <input id="txtAuthorName" />
+        </div>
+        <div>
+            <label>Book Category:</label>
+            <input id="txtBookCategory" />
+        </div>
+        <div>
+            <label>Edition:</label>
+            <input id="txtEdition" />
+        </div>
+        <div>
+            <label>Price:</label>
+            <input id="txtPrice" />
+        </div>
+        <div>
+            <label>Publisher:</label>
+            <input id="txtPublisher" />
+        </div>
+    </div>
+    <div style="margin-top:20px;">
+        <button id="btnSubmit">Save</button>
+    </div>
+</div>
+

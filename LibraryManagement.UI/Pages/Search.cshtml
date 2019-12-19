@@ -1,0 +1,46 @@
+﻿@page
+@model LibraryManagement.UI.Pages.SearchModel
+@{
+    ViewData["Title"] = "Library Management - Search";
+}
+<script src="~/js/lib/jquery-3.4.1.js"></script>
+<script src="~/js/lib/jquery-ui.js"></script>
+<script src="~/js/Library.js"></script>
+
+<h4>Search</h4>
+<div id="divSearchContainer">
+    <div class="">
+        <div>
+            <label>Search Item:</label>
+            <input id="txtSearch" type="text" placeholder="Search by Book(Title), Author or Publisher" style="width:300px" />
+            <button id="btnSearch">Search</button>
+            <button id="btnClear">Clear</button>
+        </div>
+    </div>
+</div>
+
+<div id="divBookGrid" style="margin-top:20px;">
+    <table id="tblBookDetail" border="1">
+        <thead>
+            <tr>
+                <th>Book</th>
+                <th>Author</th>
+                <th>Category</th>
+                <th>Edition</th>
+                <th>Price</th>
+                <th>Publisher</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
